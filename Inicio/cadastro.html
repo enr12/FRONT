@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="imagem/png" href="./images/logo.png"/>
+
+    <script src="./javascript/script_cad.js" defer></script>
+
+    <title>4 em linha</title>
+</head>
+<body>
+    <main>
+        <section class="cadastro"> 
+    
+          <div class="wrapper">
+    
+            <img src="./images/logo.png" class="login__logo_cad">
+    
+            <h1 class="login__title_cad">4 em linha - Cadastro</h1>
+    
+            <label class="login__label_cad">
+              <span>nome de usuário</span>
+              <input id="nome_cad" type="text" name="username_cad" class="input">
+            </label>
+          
+            <label class="login__label_cad">
+              <span>senha</span>
+              <input id="senha_cad" type="password" name="password_cad" class="input">
+            </label>
+
+            <label class="login__label_cad">
+                <span>e-mail</span>
+                <input id="email" type="text" name="email_cad" class="input">
+            </label>
+
+          </div>
+
+          <div>
+            <span class="login__icons_cad">
+                <button type="button" class="icons__button_cad" onclick="location.href='index.html'">
+                    Voltar
+                </button>
+            </span> 
+            <span class="login__icons_cad_but">
+                <button type="submit" class="login__button_cad" disabled onclick="PostCadastro()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"/>
+                    </svg>
+               </button>
+            </span>
+          </div>
+        </section>
+      </main>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" type="imagem/png" href="./images/logo.png" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="./javascript/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./game.css">
+    <link rel="icon" type="imagem/png" href="./images/logo.png" />
+    <script src="./javascript/script_cad.js" defer></script>
+    <script src="./javascript/newgame.js" defer></script>
+    <script src="./javascript/server.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.17/signalr.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>4 em Linha</title>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-mynav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">4Lines</a>
+            <button onclick="sair()" for="click" class="click-me-exit">Sair</label>
+        </div>
+    </nav>
+    <center>
+        <div class="container">
+
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="./images/logo.png" alt="4Lines.svg" width="150" height="150">
+                <h2>4Lines</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="container"
+                    style="padding: 20px; margin:0 auto; max-width: 800px; width:100%; background-color: #fff; border-radius: 10px;">
+                    <div class="container" style="margin:0 auto; max-width: 800px; width:100%; display: block;">
+                        <div class="d-flex bd-highlight mb-3">
+                            <div class="p-2 bd-highlight">
+                                <button type="button" class="btn btn-secondary" onclick="location.href='./saguao.html'">Início</button>
+                              </div>
+                          <div class="p-2 bd-highlight">
+                            <button type="button" class="btn btn-secondary" onclick="location.href='./regras.html'">Regras do
+                              Jogo</button>
+                          </div>
+                          <div class="p-2 bd-highlight">
+                            <button type="button" class="btn btn-secondary" onclick="location.href='./patrocinadores.html'">Patrocinadores</button>
+                          </div>
+                        </div>
+                      </div>
+                    <table role="presentation" width="100%" style="margin: 0 auto; padding: 00px;">
+                                <tr>
+
+                                    <td style="text-align: justify; padding-left: 80px; padding-right: 80px; font-size: 28px; padding-bottom: 50px;">
+                                        <img src="./images/wallpaper_2.jpg" style="max-width: 500px; height: auto; display: block; margin: 0 auto; padding: 20px; border:0px; border-radius: 0;">
+                                        <br>
+                                        - No seu turno, escolha uma coluna para jogar a sua peça<br>
+                                        - Quando for a vez do adversário, aguarde<br>
+                                        - O tempo para cada rodada é de 15 segundos<br>
+                                        - Se o limite de tempo for atingido o jogador da vez será considerado derrotado<br>
+                                        - Forme uma sequência de 4 peças antes de seu adversário<br>
+                                        - As sequências válidas são na horizontal, vertical e nas diagonais<br>
+                                        - Uma coluna cheia não pode ser escolhida para jogar<br><br>
+                                        <center><button onclick="location.href='./saguao.html'" for="click" style="background-color: #016b14;border: 1px solid #032402;" class="click-me-exit">Jogar Agora!!!</label></center></td>
+                                </tr>
+                            </table>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 14px;">Grupo 7 © - 2022 <br> Copyright - Todos os direitos reservados</p>
+    </center>
+</body>
+
+</html>
